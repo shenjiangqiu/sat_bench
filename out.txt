@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         262144 B, 64 B, 4-way associative
+Command:          ./glucose_static ./cnfs/ASG_96_len112_known_last12_2.cnf
+Data file:        cachegrind.out.8879
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   /home/jshen/git/MapleLCMDiscChronoBT/sources/core/Solver.cc
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir             I1mr    ILmr    Dr            D1mr        DLmr        Dw            D1mw        DLmw       
+--------------------------------------------------------------------------------
+29,200,834,000 366,858 233,369 8,783,340,002 708,866,027 372,408,908 3,227,875,068 208,469,494 89,987,471  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir             I1mr   ILmr   Dr            D1mr        DLmr        Dw            D1mw       DLmw        file:function
+--------------------------------------------------------------------------------
+12,211,058,167 21,171  8,318 3,698,216,329 143,684,610 103,083,198 1,378,326,595     37,970        491  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::propagate_()
+ 2,462,613,610  7,070  2,833   246,616,705 132,062,619 109,372,297    49,750,878          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::Solver::propagate_()
+ 1,663,706,348     19     19   486,569,221  41,895,081   7,788,637   328,246,780  7,887,553  2,255,281  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Heap.h:Minisat::Heap<Minisat::Solver::VarOrderLt>::percolateDown(int)
+ 1,408,384,992  2,861    747   505,724,348  39,548,484  17,598,658   283,455,311 48,827,266 30,711,690  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::propagate_()
+ 1,225,468,237      5      5   524,939,214 100,653,096  22,978,797   105,704,329 44,407,196  8,619,188  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::cancelUntil(int) [clone .part.89] [clone .constprop.217]
+ 1,055,330,786  5,336  4,925   182,399,906   1,764,118     350,809    80,103,706    329,011     49,250  ???:__ieee754_pow_sse2
+ 1,048,496,230    498    496   358,550,781  22,266,015  10,702,130    47,483,123    107,991     21,949  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit>&, int&, int&)
+ 1,030,550,882     20     20   412,480,332  28,956,989  12,412,273   352,199,970 87,417,132 40,020,052  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::uncheckedEnqueue(Minisat::Lit, int, unsigned int)
+   516,667,205  1,543  1,476   116,418,380      78,273       9,315    33,551,049  1,117,017    623,325  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit>&, int&, int&)
+   478,311,254     63     63   111,417,631   4,425,882   2,745,834    37,176,277    373,644    188,686  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::simplePropagate()
+   478,194,572  6,197  2,624   127,491,342  16,001,759   3,002,928    71,298,870  6,656,302  1,657,794  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Heap.h:Minisat::Heap<Minisat::Solver::VarOrderLt>::percolateUp(int)
+   462,050,845      2      2   237,412,496  23,350,490   6,782,391    29,407,186          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Heap.h:Minisat::Solver::cancelUntil(int) [clone .part.89] [clone .constprop.217]
+   431,334,501    131    131   132,009,715   2,353,509   1,190,916    49,876,205    117,392     58,914  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::litRedundant(Minisat::Lit, unsigned int)
+   357,537,305  2,914  2,912    63,793,638   2,164,400     846,858     4,130,412          0          0  ???:__exp1
+   338,411,893     10     10    92,534,718       1,969         822             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Heap<Minisat::Solver::VarOrderLt>::percolateDown(int)
+   323,360,774  2,970  2,790    92,327,188   6,474,526   2,342,729    14,199,183         10         10  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/Solver.h:Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit>&, int&, int&)
+   282,318,944     12     12    89,082,354     103,506      18,200    70,353,812  1,663,907  1,175,535  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::uncheckedEnqueue(Minisat::Lit, int, unsigned int)
+   254,768,042      0      0   127,384,021       1,089         451             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Alloc.h:Minisat::Solver::propagate_()
+   209,764,632     38     38   103,577,314  35,531,072  23,017,796    25,568,078          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/Solver.h:Minisat::Solver::propagate_()
+   203,457,482     71     71    50,277,201     118,951     105,264    32,735,772     81,122     56,651  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::litRedundant(Minisat::Lit, unsigned int)
+   201,044,121     18     18   144,677,348   1,450,794     593,118       165,068          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/Solver.h:Minisat::Solver::cancelUntil(int) [clone .part.89] [clone .constprop.217]
+   182,797,584     27     27    61,083,664   4,027,886   1,265,090    35,685,789  4,836,515  2,091,433  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::simplePropagate()
+   162,713,796     39     39    63,359,058     110,285      10,648     4,739,370    199,884     95,946  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::cancelUntil(int) [clone .part.89] [clone .constprop.217]
+   158,503,308  1,024  1,021    43,072,455     187,121      45,708    25,843,473    134,546     18,693  ???:pow
+   122,293,459      9      9    24,153,456  12,373,850   9,299,895       523,245          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::Solver::simplePropagate()
+   107,054,305 16,116  9,403    37,846,620   2,032,659     366,442     2,867,544    260,222    127,840  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::collectFirstUIP(unsigned int)
+    98,690,184      4      4    57,569,274   7,328,728   3,727,316     8,224,182          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Heap.h:Minisat::Solver::uncheckedEnqueue(Minisat::Lit, int, unsigned int)
+    97,089,223      7      7    19,960,199     112,604      49,973       888,750          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::SimpSolver::backwardSubsumptionCheck(bool)
+    93,676,563     82     82    36,928,406   6,567,465   3,674,748     1,534,382          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::Solver::analyze(unsigned int, Minisat::vec<Minisat::Lit>&, int&, int&)
+    92,005,020      0      0    92,005,020  47,001,936  15,477,411             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/Solver.h:Minisat::Heap<Minisat::Solver::VarOrderLt>::percolateDown(int)
+    80,244,929    436    430    34,274,809   3,628,706     781,231    12,904,492          1          1  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::pickBranchLit()
+    76,170,759 13,997  8,861     7,274,153           0           0             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Heap<Minisat::Solver::VarOrderLt>::percolateUp(int)
+    62,189,326  4,073  2,782    14,107,532      40,238      10,384       843,275     31,498      8,786  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::Solver::collectFirstUIP(unsigned int)
+    60,402,215      3      3    24,871,477           5           2    14,212,288    101,166     51,190  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Vec.h:Minisat::vec<Minisat::Lit>::push(Minisat::Lit const&)
+    59,251,606 15,098  6,524    17,822,345     509,682     201,022     4,708,721        160         26  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/..//core/Solver.cc:Minisat::Solver::search(int&)
+    57,561,404      5      5    29,479,135     450,820     400,696    16,269,047      3,035        170  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::OccLists<Minisat::Lit, Minisat::vec<Minisat::Solver::Watcher>, Minisat::Solver::WatcherDeleted>::cleanAll()
+    54,096,672      0      0    27,048,336   1,654,357     808,755             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::Solver::cancelUntil(int) [clone .part.89] [clone .constprop.217]
+    53,905,448      0      0             0           0           0             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::Solver::uncheckedEnqueue(Minisat::Lit, int, unsigned int)
+    52,942,834  6,298  6,070    17,428,048     255,928      29,599    10,352,748  1,333,195    302,573  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../mtl/Heap.h:Minisat::Solver::pickBranchLit()
+    52,207,260      3      3    22,374,540     157,302      29,550     7,458,180          2          2  ???:std::chrono::_V2::steady_clock::now()
+    44,450,295     74     74    12,245,431     740,839     613,540     9,862,609    228,109    228,109  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/SolverTypes.h:Minisat::ClauseAllocator::reloc(unsigned int&, Minisat::ClauseAllocator&)
+    42,335,003 14,438 10,240     7,544,500     606,630     306,549     6,275,460    301,862    121,691  ???:_int_malloc
+    39,468,567     19     19     6,207,987       9,390       7,562       604,694          6          4  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/SimpSolver.cc:Minisat::SimpSolver::eliminateVar(int)
+    39,253,054     14     14    10,161,096     181,762      63,587       184,301          2          2  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/SimpSolver.cc:Minisat::SimpSolver::backwardSubsumptionCheck(bool)
+    32,839,340      0      0    20,308,344   2,564,628   1,207,075             0          0          0  /mnt/sdd/jshen2/git/MapleLCMDiscChronoBT/sources/simp/../core/Solver.h:Minisat::Solver::litRedundant(Minisat::Lit, unsigned int)
+
+--------------------------------------------------------------------------------
+-- User-annotated source: /home/jshen/git/MapleLCMDiscChronoBT/sources/core/Solver.cc
+--------------------------------------------------------------------------------
+  No information has been collected for /home/jshen/git/MapleLCMDiscChronoBT/sources/core/Solver.cc
+

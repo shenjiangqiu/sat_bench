@@ -1,0 +1,162 @@
+==47425== Cachegrind, a cache and branch-prediction profiler
+==47425== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==47425== Using Valgrind-3.16.0.GIT and LibVEX; rerun with -h for copyright info
+==47425== Command: ./glucose_release ./cnfs/size_4_4_4_i0418_r8.cnf
+==47425== 
+--47425-- warning: L3 cache found, using its data for the LL simulation.
+--47425-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--47425-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+==47425== brk segment overflow in thread #1: can't grow to 0x4b25000
+==47425== (see section Limitations in user manual)
+==47425== NOTE: further instances of this message will not be shown
+c This is MapleLCMDistChronoBT-DL.
+c WARNING: for repeatability, setting FPU to use double precision
+c ============================[ Problem Statistics ]=============================
+c |                                                                             |
+
+
+ start parsing 
+
+clause_allocate_size 114616
+model 0
+conflict 0
+clauses 17012
+learnts_core 0
+activity_CHB 9120
+watches_bin 26144
+watches 41904
+assigns 1140
+polarity 1140
+decision 1140
+trail 256
+trail_lim 0
+vardata 9120
+assumptions 0
+total_Watchers: 0
+total_act_watchers: 0
+total_indexs: 64
+time_find_conflict: 0
+total_find_conflict_length: 0
+total_find_conflict_allsize: 0
+total_propagation_time: 5469542
+total_work_time: 155667549
+times_only_access_watches: 0
+total_watch_access: 0
+total_clause_access_times: 0
+total_clause_access_size: 0
+total_change_other_watch: 0
+total_push_new_implication: 0
+total_no_clause_access: 64
+total_no_implication_added: 64
+total_no_change_other_watch: 64
+
+
+ end parsing 
+
+c |  Number of variables:          1140                                         |
+c |  Number of clauses:            4253                                         |
+c |  Parse time:                   0.17 s                                       |
+c |  Eliminated clauses:           0.03 Mb                                      |
+c Reduced to 607 vars, 3941 cls (grow=0)
+c No iterative elimination performed. (vars=607, c/v ratio=6.5)
+c |  Simplification time:          0.23 s                                       |
+c |                                                                             |
+c ============================[ Search Statistics ]==============================
+c | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+c |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+c ===============================================================================
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 291
+c Duplicate learnts added (conflicts) 18
+c Duplicate learnts added (tier2) 221
+c Duptime: 15934075
+c Number of conflicts: 764506
+c Core size: 29624
+c removed duplicates 470687
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 585
+c Duplicate learnts added (conflicts) 53
+c Duplicate learnts added (tier2) 600
+c Duptime: 28054824
+c Number of conflicts: 1540230
+c Core size: 40249
+c removed duplicates 508171
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 910
+c Duplicate learnts added (conflicts) 94
+c Duplicate learnts added (tier2) 889
+c Duptime: 41298639
+c Number of conflicts: 2319310
+c Core size: 47735
+c removed duplicates 565143
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 1057
+c Duplicate learnts added (conflicts) 108
+c Duplicate learnts added (tier2) 1048
+c Duptime: 55170771
+c Number of conflicts: 3078014
+c Core size: 47145
+c removed duplicates 608101
+c ===============================================================================
+clause_allocate_size 1484768
+model 0
+conflict 0
+clauses 9848
+learnts_core 99312
+activity_CHB 9120
+watches_bin 5616
+watches 485040
+assigns 1140
+polarity 1140
+decision 1140
+trail 1328
+trail_lim 0
+vardata 9120
+assumptions 0
+total_Watchers: 25833063897
+total_act_watchers: 0
+total_indexs: 274748578
+time_find_conflict: 3321645
+total_find_conflict_length: 346018972
+total_find_conflict_allsize: 507429056
+total_propagation_time: 6490681065867
+total_work_time: 8162835825354
+times_only_access_watches: 0
+total_watch_access: 0
+total_clause_access_times: 5956478775
+total_clause_access_size: 25000947381
+total_change_other_watch: 4845657061
+total_push_new_implication: 279101641
+total_no_clause_access: 29759645
+total_no_implication_added: 139441542
+total_no_change_other_watch: 51344654
+c restarts              : 5360
+c duplicate learnts_cnf : 116
+c duplicate learnts_min : 1158
+c conflicts             : 3402336        (419 /sec)
+c decisions             : 4015658        (0.00 % random) (494 /sec)
+c propagations          : 270456795      (33293 /sec)
+c conflict literals     : 77545670       (44.01 % deleted)
+c backtracks            : 3402335        (NCB 100% , CB 0%)
+c Memory used           : 149.00 MB
+c CPU time              : 8123.43 s
+
+s UNSATISFIABLE
+==47425== 
+==47425== I   refs:      1,161,328,868,886
+==47425== I1  misses:            4,567,655
+==47425== LLi misses:                8,608
+==47425== I1  miss rate:              0.00%
+==47425== LLi miss rate:              0.00%
+==47425== 
+==47425== D   refs:        511,359,458,007  (377,173,721,357 rd   + 134,185,736,650 wr)
+==47425== D1  misses:       20,223,345,664  ( 16,816,631,891 rd   +   3,406,713,773 wr)
+==47425== LLd misses:            6,241,788  (      2,409,295 rd   +       3,832,493 wr)
+==47425== D1  miss rate:               4.0% (            4.5%     +             2.5%  )
+==47425== LLd miss rate:               0.0% (            0.0%     +             0.0%  )
+==47425== 
+==47425== LL refs:          20,227,913,319  ( 16,821,199,546 rd   +   3,406,713,773 wr)
+==47425== LL misses:             6,250,396  (      2,417,903 rd   +       3,832,493 wr)
+==47425== LL miss rate:                0.0% (            0.0%     +             0.0%  )

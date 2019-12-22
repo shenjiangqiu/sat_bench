@@ -1,0 +1,107 @@
+c This is MapleLCMDistChronoBT-DL.
+c WARNING: for repeatability, setting FPU to use double precision
+c ============================[ Problem Statistics ]=============================
+c |                                                                             |
+
+
+ start parsing 
+
+clause_allocate_size 171376
+model 0
+conflict 0
+clauses 27056
+learnts_core 0
+activity_CHB 18200
+watches_bin 72144
+watches 36080
+assigns 2275
+polarity 2275
+decision 2275
+trail 4
+trail_lim 0
+vardata 18200
+assumptions 0
+total_Watchers: 0
+total_act_watchers: 0
+total_indexs: 1
+time_find_conflict: 0
+total_find_conflict_length: 0
+total_find_conflict_allsize: 0
+
+
+ end parsing 
+
+c |  Number of variables:          2275                                         |
+c |  Number of clauses:            6764                                         |
+c |  Parse time:                   0.00 s                                       |
+c |  Eliminated clauses:           0.08 Mb                                      |
+c Reduced to 651 vars, 3302 cls (grow=0)
+c No iterative elimination performed. (vars=651, c/v ratio=5.1)
+c |  Simplification time:          0.01 s                                       |
+c |                                                                             |
+c ============================[ Search Statistics ]==============================
+c | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+c |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+c ===============================================================================
+c Switched to VSIDS.
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 115
+c Duplicate learnts added (conflicts) 1
+c Duplicate learnts added (tier2) 29
+c Duptime: 1078097
+c Number of conflicts: 650637
+c Core size: 30709
+c removed duplicates 481073
+c Switched to VSIDS.
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 343
+c Duplicate learnts added (conflicts) 5
+c Duplicate learnts added (tier2) 149
+c Duptime: 2182404
+c Number of conflicts: 1218183
+c Core size: 44091
+c removed duplicates 530097
+c Switched to VSIDS.
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 635
+c Duplicate learnts added (conflicts) 18
+c Duplicate learnts added (tier2) 324
+c Duptime: 3355914
+c Number of conflicts: 1818054
+c Core size: 53580
+c removed duplicates 565486
+c Switched to VSIDS.
+c ===============================================================================
+clause_allocate_size 5101460
+model 0
+conflict 0
+clauses 12288
+learnts_core 208800
+activity_CHB 18200
+watches_bin 17120
+watches 1105520
+assigns 2275
+polarity 2275
+decision 2275
+trail 1752
+trail_lim 0
+vardata 18200
+assumptions 0
+total_Watchers: 26660352704
+total_act_watchers: 0
+total_indexs: 320495434
+time_find_conflict: 2200165
+total_find_conflict_length: 396473743
+total_find_conflict_allsize: 513925055
+c restarts              : 4899
+c duplicate learnts_cnf : 33
+c duplicate learnts_min : 808
+c conflicts             : 2277039        (4482 /sec)
+c decisions             : 2620004        (0.00 % random) (5157 /sec)
+c propagations          : 312714285      (615538 /sec)
+c conflict literals     : 48980089       (59.73 % deleted)
+c backtracks            : 2277038        (NCB 100% , CB 0%)
+c Memory used           : 71.00 MB
+c CPU time              : 508.034 s
+
+s UNSATISFIABLE

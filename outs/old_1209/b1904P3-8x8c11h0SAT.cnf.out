@@ -1,0 +1,255 @@
+c This is MapleLCMDistChronoBT-DL.
+c WARNING: for repeatability, setting FPU to use double precision
+c ============================[ Problem Statistics ]=============================
+c |                                                                             |
+
+
+ start parsing 
+
+clause_allocate_size 11877144
+model 0
+conflict 0
+clauses 1461536
+learnts_core 0
+activity_CHB 557152
+watches_bin 1867472
+watches 3978672
+assigns 69644
+polarity 69644
+decision 69644
+trail 53768
+trail_lim 0
+vardata 557152
+assumptions 0
+total_Watchers: 9956
+total_act_watchers: 0
+total_indexs: 13442
+time_find_conflict: 0
+total_find_conflict_length: 0
+total_find_conflict_allsize: 0
+
+
+ end parsing 
+
+c |  Number of variables:         69644                                         |
+c |  Number of clauses:          365384                                         |
+c |  Parse time:                   0.34 s                                       |
+c |  Eliminated clauses:           1.29 Mb                                      |
+c Reduced to 26440 vars, 280233 cls (grow=0)
+c No iterative elimination performed. (vars=26440, c/v ratio=10.6)
+c |  Simplification time:          0.90 s                                       |
+c |                                                                             |
+c ============================[ Search Statistics ]==============================
+c | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+c |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+c ===============================================================================
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 331
+c Duplicate learnts added (conflicts) 10
+c Duplicate learnts added (tier2) 452
+c Duptime: 1684142
+c Number of conflicts: 784378
+c Core size: 64268
+c removed duplicates 454006
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 841
+c Duplicate learnts added (conflicts) 69
+c Duplicate learnts added (tier2) 1438
+c Duptime: 3563152
+c Number of conflicts: 1815349
+c Core size: 104951
+c removed duplicates 474861
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 1157
+c Duplicate learnts added (conflicts) 152
+c Duplicate learnts added (tier2) 2365
+c Duptime: 5635429
+c Number of conflicts: 3213624
+c Core size: 143379
+c removed duplicates 508306
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 1503
+c Duplicate learnts added (conflicts) 286
+c Duplicate learnts added (tier2) 3500
+c Duptime: 7810382
+c Number of conflicts: 4828084
+c Core size: 180583
+c removed duplicates 552594
+c Switched to LRB.
+c Switched to VSIDS.
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 1809
+c Duplicate learnts added (conflicts) 503
+c Duplicate learnts added (tier2) 4774
+c Duptime: 10332814
+c Number of conflicts: 6465563
+c Core size: 214873
+c removed duplicates 599697
+c Switched to VSIDS.
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 2134
+c Duplicate learnts added (conflicts) 802
+c Duplicate learnts added (tier2) 6086
+c Duptime: 13213037
+c Number of conflicts: 8655981
+c Core size: 248000
+c removed duplicates 658221
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 2428
+c Duplicate learnts added (conflicts) 1128
+c Duplicate learnts added (tier2) 7506
+c Duptime: 16283549
+c Number of conflicts: 11027310
+c Core size: 280701
+c removed duplicates 724830
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 2676
+c Duplicate learnts added (conflicts) 1536
+c Duplicate learnts added (tier2) 9028
+c Duptime: 19780102
+c Number of conflicts: 13668327
+c Core size: 311510
+c removed duplicates 801115
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 2973
+c Duplicate learnts added (conflicts) 2010
+c Duplicate learnts added (tier2) 10675
+c Duptime: 23676066
+c Number of conflicts: 16760276
+c Core size: 342346
+c removed duplicates 886252
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 3218
+c Duplicate learnts added (conflicts) 2600
+c Duplicate learnts added (tier2) 12617
+c Duptime: 28003629
+c Number of conflicts: 20176919
+c Core size: 373732
+c removed duplicates 981754
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 3466
+c Duplicate learnts added (conflicts) 3266
+c Duplicate learnts added (tier2) 14680
+c Duptime: 32816275
+c Number of conflicts: 24531835
+c Core size: 407743
+c removed duplicates 1087194
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 3710
+c Duplicate learnts added (conflicts) 4111
+c Duplicate learnts added (tier2) 17055
+c Duptime: 38415227
+c Number of conflicts: 29200113
+c Core size: 440675
+c removed duplicates 1204402
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 3953
+c Duplicate learnts added (conflicts) 5077
+c Duplicate learnts added (tier2) 19516
+c Duptime: 44665422
+c Number of conflicts: 34466135
+c Core size: 475108
+c removed duplicates 1334881
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 4191
+c Duplicate learnts added (conflicts) 6166
+c Duplicate learnts added (tier2) 22244
+c Duptime: 51642781
+c Number of conflicts: 40267420
+c Core size: 511000
+c removed duplicates 1481275
+c Switched to VSIDS.
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 4451
+c Duplicate learnts added (conflicts) 7392
+c Duplicate learnts added (tier2) 25141
+c Duptime: 59250451
+c Number of conflicts: 45937945
+c Core size: 546139
+c removed duplicates 1638821
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 4676
+c Duplicate learnts added (conflicts) 8786
+c Duplicate learnts added (tier2) 28469
+c Duptime: 67860691
+c Number of conflicts: 53677471
+c Core size: 586192
+c removed duplicates 1814099
+c Switched to LRB.
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 4939
+c Duplicate learnts added (conflicts) 10426
+c Duplicate learnts added (tier2) 32023
+c Duptime: 77856097
+c Number of conflicts: 62149867
+c Core size: 627079
+c removed duplicates 2008001
+c Switched to LRB.
+c Duplicate learnts added (Minimization) 5189
+c Duplicate learnts added (conflicts) 12289
+c Duplicate learnts added (tier2) 36078
+c Duptime: 88750886
+c Number of conflicts: 71640384
+c Core size: 670680
+c removed duplicates 2255718
+c Switched to VSIDS.
+c Duplicate learnts added (Minimization) 5432
+c Duplicate learnts added (conflicts) 14089
+c Duplicate learnts added (tier2) 40033
+c Duptime: 100317730
+c Number of conflicts: 79691216
+c Core size: 714678
+c removed duplicates 2460045
+c Switched to LRB.
+clause_allocate_size 58453824
+model 0
+conflict 0
+clauses 1033592
+learnts_core 2908012
+activity_CHB 557152
+watches_bin 784608
+watches 15458976
+assigns 69644
+polarity 69644
+decision 69644
+trail 87764
+trail_lim 156
+vardata 557152
+assumptions 0
+total_Watchers: 1278279195673
+total_act_watchers: 0
+total_indexs: 74805457971
+time_find_conflict: 69723604
+total_find_conflict_length: 5190842734
+total_find_conflict_allsize: 8148041371
